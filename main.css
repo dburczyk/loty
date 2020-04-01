@@ -20,6 +20,21 @@
 #flexbox {
     min-height: 100vh;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#lista_pasażerów {
+    margin-left: calc(50% - 200px);
+}
+
+#lista_pasażerów li{
+    background-color: antiquewhite;
+    width: 350px;
+}
+
+#lista_pasażerów li:nth-child(even){
+    background-color: bisque;
 }
 
 .opóźniony {
@@ -35,6 +50,14 @@
 .odwołany {
     background: lightcoral;
     text-transform: uppercase;
+}
+
+.popup {
+    display: none;
+}
+
+li:hover .popup {
+    display: inline;
 }
 
 img {
@@ -98,7 +121,7 @@ ul {
     padding-left: 30px;
 }
 
-a:link, a:visited {
+#menu a:link, #menu a:visited {
     color: black;
     text-decoration: none;
 }
