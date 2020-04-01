@@ -1,7 +1,35 @@
+#główna {
+    width: 100%;
+}
+
+#menu {
+    background: rgb(255, 204, 145);
+}
+
+#flexbox {
+    min-height:100vh;
+    height:100%;
+}
+
+.opóźniony {
+    background: orange;
+}
+
+.odwołany {
+    background: red;
+}
+
+img {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
 body {
-    text-align: center;
     background-color: beige;
+    text-align: center;
     font-size: 20px;
+    margin: 0;
 }
 
 footer {
@@ -36,7 +64,6 @@ table th, table td {
     padding: 12px;
 }
 ol {
-    margin-left: calc(50% - 200px);
     list-style-position: inside;
 }
 li {

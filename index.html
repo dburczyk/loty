@@ -12,25 +12,41 @@
 
 <body>
 
-<div style="display: flex; flex-direction: column;">
-    <section>
-        <header> Nawigacja </header>
+<div id="flexbox" style="display: flex; flex-direction: row;">
+
+    <section id="menu">
+        <img src="airline.jpg" alt="Feniks" style="display: block; max-height: 200px;">
+        <br><br>
+        <nav>
+            <header><b>Menu</b></header>
+
+            <ul>
+                <li><a  href="index.html">Strona główna</a></li>
+                <li>
+                    <a  href="loty.html">Loty</a>
+                <ul>
+                    <li><a  href="loty.html#warszawa">Początek</a></li>
+                    <li><a  href="loty.html#berlin">Koniec</a></li>
+                    <li><a  href="loty.html#samolot">Informacje o samolocie</a></li>
+                </ul>
+                </li>
+                <li><a  href="loty.html">Najczęstsze pytania</a></li>
+                <li><a  href="loty.html">Dokumenty</a></li>
+                <li><a  href="loty.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </section>
 
-    <section>
+    <section id="główna">
         <header>
             <h1>Witaj w spisie linii lotniczych!</h1>
         </header>
-        <img src="airline.jpg" alt="Feniks" style="display: block; width: 20%; height: 20%;
-    margin-left: auto; margin-right: auto">
-        <p id="pierwszy" style="background-color: rgb(250, 191, 82)">Możesz tu znaleźć między innymi godzinę i datę
+        <p style="background-color: rgb(250, 191, 82)">Możesz tu znaleźć między innymi godzinę i datę
             odlotu.</p>
 
-        <p id="drugi" style="background-color: rgb(114, 91, 49)">Życzymy miłego pobytu na stronie.</p>
+        <p style="background-color: rgb(114, 91, 49)">Życzymy miłego pobytu na stronie.</p>
         <div style="position: relative">
-            <p id="trzeci" ; style="width: 200px; background-color: orange; position: relative;
-    top: 170px; left: -145px; font-size: 15px">
-                Ale super lot!</p>
+
             <table>
                 <tr>
                     <th>Nr lotu</th>
@@ -38,27 +54,42 @@
                     <th>Do</th>
                     <th>Data</th>
                     <th>Godzina</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td><a href="podstrona.html">135123</a></td>
+                    <td><a href="loty.html">135123</a></td>
                     <td>Gdańsk</td>
                     <td>Bukareszt</td>
                     <td>21.05.2020</td>
                     <td>11:45</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td><a href="podstrona.html">654321</a></td>
-                    <td>Warszawa</td>
+                    <td><a href="loty.html">654321</a></td>
+                    <td style="position: relative">
+                        <p style="width: 200px; background-color: orange; position: absolute; top: -25px; left: 25px;
+                            font-size: 15px; text-align: center"> Ale super lot!</p>
+                        Warszawa</td>
                     <td>Berlin</td>
                     <td>28.03.2020</td>
                     <td>18:10</td>
+                    <td></td>
                 </tr>
-                <tr>
-                    <td><a href="podstrona.html">829023</a></td>
+                <tr class="opóźniony">
+                    <td><a href="loty.html">829023</a></td>
                     <td>Warszawa</td>
                     <td>Moskwa</td>
                     <td>13.11.2020</td>
                     <td>13:20</td>
+                    <td>Opóźniony 1h</td>
+                </tr>
+                <tr class="odwołany">
+                    <td><a href="loty.html">123678</a></td>
+                    <td>Warszawa</td>
+                    <td>Londyn</td>
+                    <td>02.06.2020</td>
+                    <td>06:20</td>
+                    <td>Odwołany</td>
                 </tr>
             </table>
         </div>
