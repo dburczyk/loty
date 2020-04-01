@@ -28,12 +28,12 @@
     margin-left: calc(50% - 200px);
 }
 
-#lista_pasażerów li{
+#lista_pasażerów li {
     background-color: antiquewhite;
     width: 350px;
 }
 
-#lista_pasażerów li:nth-child(even){
+#lista_pasażerów li:nth-child(even) {
     background-color: bisque;
 }
 
