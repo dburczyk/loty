@@ -2,21 +2,39 @@
     width: 100%;
 }
 
+#opóźnienia {
+    background: rgb(255, 204, 145);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #menu {
     background: rgb(255, 204, 145);
+    font-family: monospace;
+    font-variant-caps: all-small-caps;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #flexbox {
-    min-height:100vh;
-    height:100%;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .opóźniony {
+    background: yellow;
+    text-transform: uppercase;
+}
+
+.bardzo_opóźniony {
     background: orange;
+    text-transform: uppercase;
 }
 
 .odwołany {
-    background: red;
+    background: lightcoral;
+    text-transform: uppercase;
 }
 
 img {
@@ -28,7 +46,7 @@ img {
 body {
     background-color: beige;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -37,7 +55,10 @@ footer {
     color: grey;
     font-family: sans-serif;
     font-size: 15px;
-    width: 350px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 p {
@@ -63,9 +84,21 @@ table th, table td {
     border-color: aquamarine;
     padding: 12px;
 }
+
 ol {
     list-style-position: inside;
 }
+
 li {
     text-align: left
+}
+
+ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
 }
