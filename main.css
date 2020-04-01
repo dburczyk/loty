@@ -1,27 +1,40 @@
-#główna {
-    width: 100%;
+.grid {
+    display: grid;
+    grid-template-columns: 250px auto auto auto auto;
+    grid-column-gap: 15px;
+    height: 100vh;
 }
 
-#opóźnienia {
-    background: rgb(255, 204, 145);
-    padding-left: 20px;
-    padding-right: 20px;
+@media screen and (max-width: 1300px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-column-gap: 0;
+        height: 100vh;
+    }
 }
 
-#menu {
-    background: rgb(255, 204, 145);
+.menu {
+    background-color: rgb(255, 204, 145);
     font-family: monospace;
     font-variant-caps: all-small-caps;
     white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
+    grid-column: 1/2;
 }
 
-#flexbox {
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+.główna {
+    background-color: #ffefcc;
+    width: 100%;
+    grid-column: 2 / 5;
+}
+
+.opóźnienia {
+    background-color: rgb(255, 204, 145);
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-column: 5 / 6;
 }
 
 #lista_pasażerów {
