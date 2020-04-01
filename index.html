@@ -102,7 +102,7 @@
         <header>
             <h1>Opóźnienia</h1>
         </header>
-
+        <div id="tablica_opóźnień">
             <table>
                 <tr>
                     <th>Nr lotu</th>
@@ -125,11 +125,52 @@
                     <td>Odwołany</td>
                 </tr>
             </table>
+        </div>
+
+        <br><br>
+
+        <div id="rezerwacja">
+            <header>
+                <b>Zarezerwuj lot</b>
+            </header>
+            <form id="formularz_rezerwacji">
+                <label>Z:
+                    <select name="z">
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Gdańsk">Gdańsk</option>
+                    </select>
+                </label>
+                <label>Do:
+                    <select name="do">
+                        <option value="Bukareszt">Bukareszt</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Moskwa">Moskwa</option>
+                        <option value="Szczecin">Szczecin</option>
+                        <option value="Londyn">Londyn</option>
+                    </select>
+                </label>
+                <br>
+                <label>Imię:
+                    <input name="imię">
+                </label>
+                <br>
+                <label>Nazwisko:
+                    <input name="nazwisko">
+                </label>
+                <br>
+                <label>Data:
+                    <input name="data" type="date">
+                </label>
+                <br>
+                <button type="reset">Wyczyść</button>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
     </section>
 
-        <footer>
-            <p>Autor: Damian Burczyk</p>
-        </footer>
+    <footer>
+        <p>Autor: Damian Burczyk</p>
+    </footer>
 
 </div>
 </body>
