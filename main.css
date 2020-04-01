@@ -50,7 +50,7 @@
     background-color: bisque;
 }
 
-#menu a:link, #menu a:visited {
+.menu a:link, .menu a:visited {
     color: black;
     text-decoration: none;
 }
