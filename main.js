@@ -1,3 +1,4 @@
-var el = document.querySelector("input[name=imię]");
-console.log(el);
+setTimeout(function () {
+    console.log('No już wreszcie.');
+}, 2000);
 //# sourceMappingURL=main.js.map

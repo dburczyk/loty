@@ -1,2 +1,3 @@
-let el = document.querySelector("input[name=imię]") as HTMLInputElement;
-console.log(el);
+setTimeout(() => {
+    console.log('No już wreszcie.');
+}, 2000);
