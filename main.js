@@ -1,3 +1,2 @@
-let el = document.querySelector("input[type=submit]");
+let el = document.querySelector("button[type=submit]");
 console.log(el);
-console.log("dziala");
